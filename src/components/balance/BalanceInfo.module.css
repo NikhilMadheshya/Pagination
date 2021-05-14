@@ -1,0 +1,36 @@
+
+
+.balanceInfo
+{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.titleInfo{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.expense_and_income_info{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 3px 4px #0001;
+}
+
+.expense,.income{
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.expense h2{
+    color:red;
+}
+
+.income h2{
+    color: #33ff33;
+}

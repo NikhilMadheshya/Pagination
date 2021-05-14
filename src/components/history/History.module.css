@@ -1,0 +1,52 @@
+
+.historyInfo{
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    padding: 0 5px;
+
+}
+
+
+
+.historyInfo::-webkit-scrollbar{
+    width: 4px;
+}
+
+.historyInfo::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: #999;
+}
+
+.action{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.deleteHistory{
+    height: 30px;
+    width: 30px;
+    color: red;
+    font-size: 1rem;
+    border-radius: 50%;
+    border:none;
+    border:1px solid red;
+}
+
+
+.debit,.credit{
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+    box-shadow: 0 3px 4px #0001;
+}
+
+.debit{
+    border-right: 5px solid #33ff33;
+}
+.credit{
+    border-right: 5px solid red;
+}

@@ -1,26 +1,18 @@
-import React,{useState,useEffect} from 'react'
-import Pages from './Pages';
-
+import React from 'react'
+import styles from './App.module.css';
+import BalanceInfo from './components/balance/BalanceInfo';
+import Form from './components/form/Form';
+import History from './components/history/History';
 
 function App() {
-const [data,setData]=useState([]);
-   
-useEffect(()=>{
- (async ()=>{
-const response= await fetch('https://jsonplaceholder.typicode.com/posts');
-const data=await response.json();
-setData(data);
- })()
-
-   },[])
-
     return (
-        <>
-        {
-            data.length>0?
-            <Pages data={data} />:<p>Loading...</p>
-        }
-        </>
+        <div className={styles.container}>
+            <h1 className={styles.app_title}>EXPENSE TRACKER</h1>
+            <BalanceInfo/>
+            <History/>
+            <Form/>
+            
+        </div>
     )
 }
 
